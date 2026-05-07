@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaBriefcase, FaCalendar, FaMapMarkerAlt } from 'react-icons/fa'
+import { RESUME_URL, RESUME_FILENAME } from '../resumeConfig'
 
 const Experience = () => {
   const experiences = [
@@ -165,8 +166,10 @@ const Experience = () => {
           >
             <p className="text-gray-400 mb-6">Want to know more about my professional background?</p>
             <a
-              href="/myportfolio/babith_s_resume.pdf"
-              download="Babith_Sarish_S_Resume.pdf"
+              href={RESUME_URL}
+              download={RESUME_FILENAME}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2"
             >
               Download Resume
